@@ -16,7 +16,21 @@ public class Sorcerer extends Class
 	private String sourceOfPower;
 	
 	Sorcerer() {
-		
+		ArrayList<String> awp = new ArrayList<String>();
+		awp.set(0, "Daggers");
+		awp.set(1, "Darts");
+		awp.set(2, "Slings");
+		awp.set(3, "Quarterstaffs");
+		awp.set(4, "Light Crossbows");
+
+
+		super.setDescription("A spellcaster who draws on inherent magic from a gift or bloodline");
+		super.setArmorWeaponProficiencies(awp);
+		super.setHitDie("d6");
+		super.setPrimaryAbility("Charisma");
+		super.setProficiencyBonus(2);
+		super.setSavingThrowProficiencies("Constitution & Charisma");
+
 	}
 
 	public String getDescription()

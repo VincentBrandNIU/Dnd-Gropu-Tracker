@@ -15,7 +15,21 @@ public class Ranger extends Class
 	private ArrayList<String> spellsKnown;
 	
 	Ranger(){
-		
+		ArrayList<String> awp = new ArrayList<String>();
+		awp.set(0, "Light Armor");
+		awp.set(1, "Medium Armor");
+		awp.set(2, "Shields");
+		awp.set(3, "Simple Weapons");
+		awp.set(4, "Martial Weapons");
+
+
+		super.setDescription("A warrior who uses martial prowess and nature magic to combat threats on the edges of civilization");
+		super.setArmorWeaponProficiencies(awp);
+		super.setHitDie("d10");
+		super.setPrimaryAbility("Dexterity & Wisdom");
+		super.setProficiencyBonus(2);
+		super.setSavingThrowProficiencies("Strength & Dexterity");
+
 	}
 
 	public String getDescription()

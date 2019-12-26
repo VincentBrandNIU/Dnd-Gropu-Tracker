@@ -15,7 +15,21 @@ public class Bard extends Class
 	private ArrayList<String> spellsKnown;
 	
 	Bard(){
+		ArrayList<String> awp = new ArrayList<String>();
+		awp.set(0, "Light Armor");
+		awp.set(1, "Simple Weapons");
+		awp.set(2, "Hand Crossbows");
+		awp.set(3, "Long Swords");
+		awp.set(4, "Rapiers");
+		awp.set(5, "Shortswords");
 		
+		
+		super.setDescription("An inspiring magician whose power echoes the music of creation");
+		super.setArmorWeaponProficiencies(awp);
+		super.setHitDie("d8");
+		super.setPrimaryAbility("Charisma");
+		super.setProficiencyBonus(2);
+		super.setSavingThrowProficiencies("Dexterity & Charisma");
 	}
 
 	public String getDescription()

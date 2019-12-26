@@ -16,7 +16,20 @@ public class Paladin extends Class
 	private String oath;
 	
 	Paladin() {
-		
+		ArrayList<String> awp = new ArrayList<String>();
+		awp.set(0, "All Armor");
+		awp.set(1, "Shields");
+		awp.set(2, "Simple Weapons");
+		awp.set(3, "Martial Weapons");
+
+
+		super.setDescription("A holy warrior bound to a sacred oath");
+		super.setArmorWeaponProficiencies(awp);
+		super.setHitDie("d10");
+		super.setPrimaryAbility("Strength & Charisma");
+		super.setProficiencyBonus(2);
+		super.setSavingThrowProficiencies("Wisdom & Charisma");
+
 	}
 
 	public String getDescription()

@@ -15,7 +15,20 @@ public class Wizard extends Class
 	private ArrayList<String> spellsKnown;
 	
 	Wizard() {
-		
+		ArrayList<String> awp = new ArrayList<String>();
+		awp.set(0, "Daggers");
+		awp.set(1, "Darts");
+		awp.set(2, "Slings");
+		awp.set(3, "Quarterstaffs");
+		awp.set(4, "Light Crossbow");
+
+
+		super.setDescription("A scholarly magic-user capable of manipulating the structures of reality");
+		super.setArmorWeaponProficiencies(awp);
+		super.setHitDie("d6");
+		super.setPrimaryAbility("Intelligence");
+		super.setProficiencyBonus(2);
+		super.setSavingThrowProficiencies("Intelligence & Wisdom");
 	}
 
 	public String getDescription()

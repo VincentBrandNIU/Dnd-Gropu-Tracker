@@ -16,7 +16,19 @@ public class Cleric extends Class
 	private String divineDomain;
 	
 	Cleric(){
+		ArrayList<String> awp = new ArrayList<String>();
+		awp.set(0, "Light Armor");
+		awp.set(1, "Medium Armor");
+		awp.set(2, "Shields");
+		awp.set(3, "Simple Weapons");
 		
+		
+		super.setDescription("A priestly champion who wields divine magic in service of a higher power");
+		super.setArmorWeaponProficiencies(awp);
+		super.setHitDie("d8");
+		super.setPrimaryAbility("Wisdom");
+		super.setProficiencyBonus(2);
+		super.setSavingThrowProficiencies("Wisdom & Charisma");
 	}
 
 	public String getDescription()

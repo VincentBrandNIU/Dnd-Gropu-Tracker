@@ -7,21 +7,23 @@ import java.util.ArrayList;
 
 public class Barbarian extends Class
 {
-	private String description;
 	private ArrayList<String> classFeatures;
 	
 	Barbarian() {
+		ArrayList<String> awp = new ArrayList<String>();
+		awp.set(0, "Light Armor");
+		awp.set(1, "Medium Armor");
+		awp.set(2, "Shields");
+		awp.set(3, "Simple Weapons");
+		awp.set(4, "Martial Weapons");
 		
-	}
-
-	public String getDescription()
-	{
-		return description;
-	}
-
-	public void setDescription(String description)
-	{
-		this.description = description;
+		
+		super.setDescription("A fierce warrior of primitive background who can enter a battle rage");
+		super.setArmorWeaponProficiencies(awp);
+		super.setHitDie("d12");
+		super.setPrimaryAbility("Strength");
+		super.setProficiencyBonus(2);
+		super.setSavingThrowProficiencies("Strength & Constitution");
 	}
 
 	public ArrayList<String> getClassFeatures()

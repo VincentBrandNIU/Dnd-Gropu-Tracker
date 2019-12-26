@@ -8,11 +8,12 @@ import java.util.ArrayList;
  */
 public class Class
 {
+	private String description;
 	private int proficiencyBonus;
 	private String primaryAbility;
 	private String hitDie;
 	private ArrayList<String> armorWeaponProficiencies;
-	private ArrayList<String> savingThrowProficiencies;
+	private String savingThrowProficiencies;
 	private ArrayList<String> skills;
 	
 	Class(){
@@ -60,13 +61,13 @@ public class Class
 		this.armorWeaponProficiencies = armorWeaponProficiencies;
 	}
 
-	public ArrayList<String> getSavingThrowProficiencies()
+	public String getSavingThrowProficiencies()
 	{
 		return savingThrowProficiencies;
 	}
 
 	public void setSavingThrowProficiencies(
-			ArrayList<String> savingThrowProficiencies)
+			String savingThrowProficiencies)
 	{
 		this.savingThrowProficiencies = savingThrowProficiencies;
 	}
@@ -79,6 +80,16 @@ public class Class
 	public void setSkills(ArrayList<String> skills)
 	{
 		this.skills = skills;
+	}
+
+	public String getDescription()
+	{
+		return description;
+	}
+
+	public void setDescription(String description)
+	{
+		this.description = description;
 	}
 	
 }

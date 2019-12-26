@@ -16,7 +16,18 @@ public class Warlock extends Class
 	private String patron;
 	
 	Warlock() {
-		
+		ArrayList<String> awp = new ArrayList<String>();
+		awp.set(0, "Light Armor");
+		awp.set(1, "Simple Weapons");
+
+
+		super.setDescription("A wielder of magic that is derived from a bargain with an extraplanar entity");
+		super.setArmorWeaponProficiencies(awp);
+		super.setHitDie("d8");
+		super.setPrimaryAbility("Charisma");
+		super.setProficiencyBonus(2);
+		super.setSavingThrowProficiencies("Wisdom & Charisma");
+
 	}
 
 	public String getDescription()
