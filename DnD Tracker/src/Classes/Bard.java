@@ -14,7 +14,7 @@ public class Bard extends Class
 	private int numSpellsKnown;
 	private ArrayList<String> spellsKnown;
 	
-	Bard(){
+	public Bard(){
 		ArrayList<String> awp = new ArrayList<String>();
 		awp.set(0, "Light Armor");
 		awp.set(1, "Simple Weapons");

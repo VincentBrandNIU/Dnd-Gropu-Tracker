@@ -11,7 +11,7 @@ public class Monk extends Class
 	private String description;
 	private ArrayList<String> classFeatures;
 	
-	Monk(){
+	public Monk(){
 		ArrayList<String> awp = new ArrayList<String>();
 		awp.set(0, "Simple Weapons");
 		awp.set(1, "Shortswords");

@@ -15,15 +15,17 @@ public class DragonBorn extends Race{
 	private String dragonType;
 	private HashMap<String,String> breathWeapon = new HashMap<String,String>();
 	private ArrayList<String> featureProf = new ArrayList<String>();
-	
-	public DragonBorn(String type) {
+	public DragonBorn() {
 		super.addLanguage("Common");
 		super.addLanguage("Draconic");
+	}
+	public DragonBorn(String type) {
 		this.setDragonType(type);
 		this.featureProf.add(buildFeatureString("Damage Resistance"));
 		this.featureProf.add(buildFeatureString("Breath Weapon "));
 		super.setSpeed(30);		
 	}
+	
 	private String buildFeatureString(String begin) {
 		StringBuilder feature = new StringBuilder();
 		feature.append(begin);

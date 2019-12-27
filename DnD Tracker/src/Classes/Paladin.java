@@ -15,7 +15,7 @@ public class Paladin extends Class
 	private String deity;
 	private String oath;
 	
-	Paladin() {
+	public Paladin() {
 		ArrayList<String> awp = new ArrayList<String>();
 		awp.set(0, "All Armor");
 		awp.set(1, "Shields");

@@ -15,7 +15,7 @@ public class Cleric extends Class
 	private String deity;
 	private String divineDomain;
 	
-	Cleric(){
+	public Cleric(){
 		ArrayList<String> awp = new ArrayList<String>();
 		awp.set(0, "Light Armor");
 		awp.set(1, "Medium Armor");

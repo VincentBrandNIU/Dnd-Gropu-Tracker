@@ -11,7 +11,7 @@ public class Rogue extends Class
 	private String description;
 	private ArrayList<String> classFeatures;
 	
-	Rogue() {
+	public Rogue() {
 		ArrayList<String> awp = new ArrayList<String>();
 		awp.set(0, "Light Armor");
 		awp.set(1, "Simple Weapons");

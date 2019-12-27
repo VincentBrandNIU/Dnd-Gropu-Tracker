@@ -14,7 +14,7 @@ public class Wizard extends Class
 	private int numSpellsKnown;
 	private ArrayList<String> spellsKnown;
 	
-	Wizard() {
+	public Wizard() {
 		ArrayList<String> awp = new ArrayList<String>();
 		awp.set(0, "Daggers");
 		awp.set(1, "Darts");

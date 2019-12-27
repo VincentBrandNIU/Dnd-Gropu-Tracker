@@ -15,7 +15,7 @@ public class Sorcerer extends Class
 	private ArrayList<String> spellsKnown;
 	private String sourceOfPower;
 	
-	Sorcerer() {
+	public Sorcerer() {
 		ArrayList<String> awp = new ArrayList<String>();
 		awp.set(0, "Daggers");
 		awp.set(1, "Darts");

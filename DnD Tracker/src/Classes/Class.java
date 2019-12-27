@@ -16,7 +16,7 @@ public class Class
 	private String savingThrowProficiencies;
 	private ArrayList<String> skills;
 	
-	Class(){
+	public Class(){
 		
 	}
 

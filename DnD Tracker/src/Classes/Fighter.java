@@ -17,7 +17,7 @@ public class Fighter extends Class
 	 * or dexterity so I did not set it here, the player will have to
 	 * choose it at character creation.
 	 */
-	Fighter(){
+	public Fighter(){
 		ArrayList<String> awp = new ArrayList<String>();
 		awp.set(0, "All Armor");
 		awp.set(1, "Shields");

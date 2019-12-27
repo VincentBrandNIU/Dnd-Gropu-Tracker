@@ -14,7 +14,7 @@ public class Ranger extends Class
 	private int numSpellsKnown;
 	private ArrayList<String> spellsKnown;
 	
-	Ranger(){
+	public Ranger(){
 		ArrayList<String> awp = new ArrayList<String>();
 		awp.set(0, "Light Armor");
 		awp.set(1, "Medium Armor");

@@ -14,7 +14,7 @@ public class Druid extends Class
 	private ArrayList<String> spellsKnown;
 	private String deity;
 	
-	Druid(){
+	public Druid(){
 		ArrayList<String> awp = new ArrayList<String>();
 		awp.set(0, "Light Armor (Nonmetal)");	
 		awp.set(1, "Medium Armor (Nonmetal)");
@@ -31,7 +31,7 @@ public class Druid extends Class
 		
 		
 
-		super.setDescription("A priest of the Old Faith, wielding the powers of nature — moonlight and plant growth, fire and lightning — and adopting animal forms");
+		super.setDescription("A priest of the Old Faith, wielding the powers of nature ï¿½ moonlight and plant growth, fire and lightning ï¿½ and adopting animal forms");
 		super.setArmorWeaponProficiencies(awp);
 		super.setHitDie("d8");
 		super.setPrimaryAbility("Wisdom");

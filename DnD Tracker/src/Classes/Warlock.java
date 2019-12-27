@@ -15,7 +15,7 @@ public class Warlock extends Class
 	private ArrayList<String> spellsKnown;
 	private String patron;
 	
-	Warlock() {
+	public Warlock() {
 		ArrayList<String> awp = new ArrayList<String>();
 		awp.set(0, "Light Armor");
 		awp.set(1, "Simple Weapons");
